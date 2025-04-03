@@ -1,0 +1,164 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background-color: #2e8b57; /* Primary color */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d1e8e2; /* Lighter shade of primary color */
+}
+
+/* Renewable Energy Installation Section */
+.installation-section {
+    padding: 40px 20px;
+}
+
+.installation-section h2 {
+    color: #333; /* Dark text color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.installation-section p {
+    color: #666; /* Medium text color */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.installation-category {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.installation-category h3 {
+    color: #2e8b57; /* Primary color */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.installation-category ol {
+    margin-left: 20px;
+    color: #666; /* Medium text color */
+}
+
+.installation-category ol li {
+    margin-bottom: 10px;
+}
+
+.installation-category p {
+    color: #666; /* Medium text color */
+}
+
+/* Footer */
+footer {
+    background-color: #2e8b57; /* Primary color */
+    color: #d1e8e2; /* Lighter text color */
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-col p, .footer-col ul, .footer-col a {
+    font-size: 1rem;
+    color: #d1e8e2;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #d1e8e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d1e8e2;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #d1e8e2;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+    }
+}

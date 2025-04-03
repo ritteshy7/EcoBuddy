@@ -1,0 +1,209 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background-color: #2e8b57; /* Primary color */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d1e8e2; /* Lighter shade of primary color */
+}
+
+/* Efficient Appliances Section */
+.appliances-section {
+    padding: 40px 20px;
+}
+
+.appliances-section h2 {
+    font-size: 2.5rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+.appliances-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.appliance-category {
+    margin-bottom: 40px;
+}
+
+.appliance-category h3 {
+    font-size: 2rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+.appliance-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.appliance-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.appliance-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.appliance-card h4 {
+    font-size: 1.5rem;
+    color: #2e8b57; /* Primary color */
+    padding: 10px;
+    margin: 0;
+}
+
+.appliance-card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px 10px;
+    margin: 0;
+}
+
+.appliance-card a {
+    color: #2e8b57; /* Primary color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.appliance-card a:hover {
+    color: #104c2e;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e8b57; /* Primary color */
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-col p, .footer-col ul, .footer-col a {
+    font-size: 1rem;
+    color: #d1e8e2;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #d1e8e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d1e8e2;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #d1e8e2;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .appliance-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

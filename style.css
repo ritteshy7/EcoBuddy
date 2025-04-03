@@ -1,0 +1,700 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    font-size: 16px;
+    
+}
+
+.navbar {
+    background-color: #2e8b57; /* Primary color: Sea Green */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0;
+}
+
+.navbar-logo {
+    color: #ffffff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-menu li {
+    height: 60px;
+}
+
+.navbar-menu li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.navbar-menu li a:hover {
+    background-color: #3cb371; /* Secondary color: Medium Sea Green */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-container {
+        padding: 0;
+    }
+    
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background-color: #2e8b57; /* Primary color: Sea Green */
+    }
+    
+    .navbar-menu.active {
+        background: #2e8b57;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    
+    .navbar-menu li {
+        height: 60px;
+    }
+    
+    .navbar-menu li a {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+/* General styles */
+
+
+.content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section styles */
+#home {
+    background: #3cb371;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.home-container button {
+    background: #ffffff;
+    color: #3cb371;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.home-container button:hover {
+    background: #2e8b57;
+    color: #ffffff;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Appliance and renewable items */
+.appliance-list,
+.renewable-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.appliance-item,
+.renewable-item {
+    background: #f4f4f4;
+    border: 3px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.appliance-item h3,
+.renewable-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .appliance-item,
+    .renewable-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .appliance-item,
+    .renewable-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Renewable Energy Options Section */
+#renewable-options {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#renewable-options h2 {
+    font-size: 2.5rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+#renewable-options p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.renewable-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.renewable-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.renewable-item a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.renewable-item:hover {
+    transform: translateY(-10px);
+}
+
+.renewable-item h3 {
+    font-size: 1.8rem;
+    color: #3cb371; /* Secondary color */
+    margin-bottom: 10px;
+}
+
+.renewable-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.renewable-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.renewable-item button {
+    background-color: #2e8b57; /* Primary color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.renewable-item button:hover {
+    background-color: #3cb371; /* Secondary color */
+}
+
+@media (max-width: 768px) {
+    .renewable-item {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .renewable-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Energy Tips Section */
+#energy-tips {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#energy-tips h2 {
+    font-size: 2.5rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+#energy-tips p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.tips-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tip-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.tip-item:hover {
+    transform: translateY(-10px);
+}
+
+.tip-item h3 {
+    font-size: 1.8rem;
+    color: #3cb371; /* Secondary color */
+    margin-bottom: 10px;
+}
+
+.tip-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tip-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .tip-item {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .tip-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* About Us Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Team Section */
+.team-container {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-container h3 {
+    font-size: 2rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    font-size: 1.5rem;
+    color: #3cb371; /* Secondary color */
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 100%;
+    }
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #f0f8ff; /* Light blue background for a clean and fresh look */
+    padding: 60px 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #2e8b57; /* Primary color */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2e8b57; /* Primary color */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #2e8b57; /* Primary color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3cb371; /* Secondary color */
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px 10px;
+    }
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #2e8b57; /* Primary color */
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-col p {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px;
+}
+.footer-col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-col p, .footer-col ul, .footer-col a {
+    font-size: 1rem;
+    color: #d1e8e2;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #d1e8e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d1e8e2;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #d1e8e2;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Energy-Efficient Appliances Section */
+.appliances-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.appliances-section h2 {
+    font-size: 2.5rem;
+    color: #2e8b57; /* Primary color */
+    margin-bottom: 20px;
+}
+
+.appliances-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.appliance-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.appliance-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.appliance-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.appliance-card h3 {
+    font-size: 1.5rem;
+    color: #2e8b57; /* Primary color */
+    padding: 10px;
+    margin: 0;
+}
+
+.appliance-card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px 10px;
+    margin: 0;
+}
+
+.appliance-card a {
+    color: #2e8b57; /* Primary color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.appliance-card a:hover {
+    color: #104c2e;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .appliance-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

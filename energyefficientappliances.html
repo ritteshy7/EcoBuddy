@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy-Efficient Appliances</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#energy-tips">Energy Tips</a></li>
+            <li><a href="#efficient-appliances">Efficient Appliances</a></li>
+            <li><a href="#renewable-options">Renewable Options</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Efficient Appliances Section -->
+    <section id="efficient-appliances" class="appliances-section">
+        <div class="content-container">
+            <h2>Energy-Efficient Refrigerators and Air Conditioners</h2>
+            <p>Discover our top recommendations for energy-efficient refrigerators and air conditioners to help you save on energy costs and reduce your environmental impact.</p>
+            
+            <div class="appliance-category">
+                <h3>Refrigerators</h3>
+                <div class="appliance-cards">
+                    <div class="appliance-card">
+                        
+                        <h4>Model A</h4>
+                        <p>Energy Star rated, 20% more efficient than standard models.</p>
+                        <p>Features: Spacious interior, adjustable shelves, precise temperature management.</p>
+                    </div>
+                    <div class="appliance-card">
+                       
+                        <h4>Model B</h4>
+                        <p>Smart cooling technology, 15% less energy usage.</p>
+                        <p>Features: Smart sensors, adaptive defrost, energy-saving mode.</p>
+                    </div>
+                    <div class="appliance-card">
+                        
+                        <h4>Model C</h4>
+                        <p>High-efficiency compressor, excellent insulation.</p>
+                        <p>Features: Energy-saving LED lighting, adjustable shelves.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="appliance-category">
+                <h3>Air Conditioners</h3>
+                <div class="appliance-cards">
+                    <div class="appliance-card">
+                        
+                        <h4>Model A</h4>
+                        <p>Energy-efficient cooling, 30% less energy usage.</p>
+                        <p>Features: Advanced cooling technology, smart thermostat.</p>
+                    </div>
+                    <div class="appliance-card">
+                        
+                        <h4>Model B</h4>
+                        <p>Inverter technology, reduces energy consumption by 25%.</p>
+                        <p>Features: Quiet operation, eco-friendly refrigerant.</p>
+                    </div>
+                    <div class="appliance-card">
+                        
+                        <h4>Model C</h4>
+                        <p>Smart energy management, 20% more efficient.</p>
+                        <p>Features: Smart home integration, programmable settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>We are dedicated to helping households and businesses optimize their energy consumption. Our mission is to promote sustainable energy practices and provide personalized recommendations.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#energy-tips">Energy Tips</a></li>
+                        <li><a href="#efficient-appliances">Efficient Appliances</a></li>
+                        <li><a href="#renewable-options">Renewable Options</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: support@energybot.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: 123 Energy St, Green City</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EnergyBot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "28f48ca7-d728-467f-8da5-85543bdf0e04", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "1bd564e4-524b-4670-a83d-ecb3c92dc980", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
